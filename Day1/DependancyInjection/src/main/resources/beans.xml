@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--
+    <bean id="communication" class="Communication">
+        <property name="messaging">
+            <ref bean="activeMQ"></ref>
+        </property>
+    </bean>
+    -->
+    <!--
+    <bean id="communication" class="Communication">
+        <constructor-arg>
+            <ref bean="activeMQ"></ref>
+        </constructor-arg>
+    </bean>
+    -->
+    <!--
+    <bean id="communication" class="Communication" autowire="byName"/>
+    <bean id="messaging" class="ActiveMQ"/>
+    -->
+    <!--
+    <bean id="communication" class="Communication" autowire="byType"/>
+    <bean id="activeMQ" class="ActiveMQ"/>
+    -->
+
+    <bean id="communication" class="Communication" autowire="constructor"/>
+    <bean id="activeMQ" class="ActiveMQ"/>
+
+</beans>

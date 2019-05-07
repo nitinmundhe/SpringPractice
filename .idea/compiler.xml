@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AOP" />
+        <module name="AOPComponentJavaBased" />
+        <module name="AOPXmlAnnotations" />
+        <module name="AOPXmlComponentScan" />
+        <module name="AutoDiscovery" />
+        <module name="AutoWireAnnotations" />
+        <module name="AutowireAutoDiscoveryJavabased" />
+        <module name="AutoWireXmlDiscovery" />
+        <module name="BeanLifeCycle" />
+        <module name="DependancyInjection" />
+        <module name="Scope" />
+        <module name="SpringJDBC" />
+        <module name="SpringMavenMVC" />
+        <module name="SpringORM" />
+        <module name="XmlBased" />
+        <module name="XMLBased" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringMVC" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
